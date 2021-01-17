@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+ :root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    /* row margin kha rha tha */
+    margin: 0;
+}
+
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: .8rem 0;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar-toggler {
+    background-color: grey;
+}
+
+.fa-snowflake {
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main_temp_header {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    /* margin-right: auto; */
+}
+
+.temp_content {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.temp_form {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.temp_form input[type="text"] {
+    padding: 1.5rem;
+    height: 3.5rem;
+    width: 50rem;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--main-bg);
+    border-radius: 16px;
+}
+
+.temp_form input[type="submit"] {
+    position: absolute;
+    height: 2.9rem;
+    width: 10rem;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    color: rgb(8, 7, 7);
+    background-color: var(--main-color);
+    border-radius: 14px;
+    top: 2.6px;
+    right: 3px;
+}
+
+.temp_form input[type="submit"]:hover {
+    color: rgb(255, 251, 251);
+    background-color: var(--main-color);
+}
+
+.tempInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    /* border: 4px solid red; */
+    box-shadow: 5px 5px rgb(148, 144, 144);
+    background-color: var(--main-bg);
+    color: white;
+    border-radius: 10px;
+    font-size: 3rem;
+    margin: 2rem;
+    padding: 3rem;
+}
+
+.top_layer {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    font-family: monospace;
+}
+
+.main_layer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+}
+
+.main_layer .city_name {
+    font-size: 2rem;
+}
+
+.middle_layer {
+    display: flex;
+}
+
+.middle_layer p {
+    margin: 0rem 4rem 2rem 4rem;
+    font-size: 5rem;
+}
+
+.middle_layer i {
+    color: var(--main-color);
+}
+
+.data_hide {
+    visibility: hidden;
+    /* transform: all 0.3s linear; */
+}
+
+::placeholder {
+    color: rgb(197, 187, 187);
+}
+
+.main_header_left p {
+    font-size: 2.5rem;
+}
+
+.main_header_left h1 {
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_left a {
+    margin: .5rem;
+    /* display: inline-block; */
+}
+
+.main_header_left span {
+    color: var(--main-color);
+}
+
+.main_header_left button {
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: skyblue;
+    color: var(--main-bg);
+    text-transform: capitalize;
+    /* color: var(--main-color); */
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+
+.main_header_left button:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_left {
+    height: 59rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_right {
+    height: 59rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_right figure img {
+    filter: drop-shadow(0 0.5rem 1rem var(--main-color));
+}
+
+
+/* Weather css  */
+
+
+/* footer  */
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 4rem;
+    font-size: 1.4rem;
+}
+
+footer div {
+    /* margin-bottom: 10px; */
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+    /* line-height: 5rem; */
+    font-size: 1.4rem;
+}
+
+footer div button {
+    width: 3rem;
+    border: none;
+    outline: none;
+}
+
+
+/* responsive code  */
+
+@media (max-width: 768px) {
+    .main_header .row .index {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main_header_left {
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .main_header_right {
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .tempInformation {
+        padding: 2rem;
+        font-size: 2.3rem;
+        height: 22rem;
+    }
+    .temp_form input[type="text"] {
+        width: 32rem;
+        font-size: 1.5rem;
+    }
+    .temp_form input[type="submit"] {
+        width: 7rem;
+        font-size: 1.5rem;
+        color: black;
+    }
+    .middle_layer p {
+        margin: 0rem 2rem 1rem 2rem;
+        font-size: 3.1rem;
+    }
+    .main_layer p {
+        font-size: 2.5rem;
+        font-family: cursive;
+    }
+}
+
+@media (max-width: 368px) {
+    .tempInformation {
+        padding: 2rem;
+        font-size: 2.3rem;
+        height: 22rem;
+    }
+    .temp_form input[type="text"] {
+        width: 29rem;
+        font-size: 1.5rem;
+    }
+    .temp_form input[type="submit"] {
+        width: 6rem;
+        font-size: 1.5rem;
+        right: 5px;
+        color: black;
+    }
+    .main_layer p {
+        margin: 0rem 2rem 1rem 2rem;
+        font-size: 2.5rem;
+    }
+}
