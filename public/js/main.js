@@ -19,8 +19,6 @@ day.innerText = arr[dayNo];
 todayDate.innerText = dateNo + "  " + arr2[monthNo];
 
 
-console.log(dayNo, dateNo, monthNo);
-
 const getInfo = async(event) => {
     event.preventDefault();
     cityVal = cityName.value;
